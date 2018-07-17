@@ -30,7 +30,7 @@ function createWindow() {
             w.minimize();
         });
 
-        document.getElementById("copy-btn").addEventListener("click", function(e) {
+        function copyEvent() {
             // Hacker Noon, you're awesome
             const el = document.createElement("textarea");
             el.value = document.getElementById("output-ta").value;
@@ -47,7 +47,11 @@ function createWindow() {
                 document.getSelection().removeAllRanges()
                 document.getSelection().addRange(selected);
             }
-        });
+        }
+
+        document.getElementById("copy-btn").addEventListener("click", copyEvent);
+
+        M.AutoInit();
     `);
     
     win.once(`ready-to-show`, () => {
