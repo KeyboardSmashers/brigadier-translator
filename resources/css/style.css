@@ -1,5 +1,5 @@
 textarea.materialize-textarea {
-    height: 8rem;
+    height: 13rem;
 }
 
 .main {
@@ -16,4 +16,19 @@ textarea.materialize-textarea {
 
 .no-shadow {
     box-shadow: none !important;
+}
+
+.custom-center {
+    display: flex;
+    justify-content: center;
+}
+
+.control-btns {
+    vertical-align: middle !important;
+    margin-top: -50px;
+}
+
+.control-btn {
+    height: 40px !important;
+    vertical-align: baseline;
 }
