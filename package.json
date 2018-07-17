@@ -1,0 +1,22 @@
+{
+  "name": "brigadier-translator",
+  "version": "1.0.0",
+  "description": "New Minecraft command syntax translation made easy",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeyboardSmashers/brigadier-translator.git"
+  },
+  "author": "Keyboard Smashers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeyboardSmashers/brigadier-translator/issues"
+  },
+  "homepage": "https://github.com/KeyboardSmashers/brigadier-translator#readme",
+  "devDependencies": {
+    "electron": "^2.0.5"
+  }
+}
