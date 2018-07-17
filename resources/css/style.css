@@ -1,0 +1,19 @@
+textarea.materialize-textarea {
+    height: 8rem;
+}
+
+.main {
+    margin-top: 5px;
+}
+
+.drag {
+    -webkit-app-region: drag;
+}
+
+.no-drag {
+    -webkit-app-region: no-drag;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
