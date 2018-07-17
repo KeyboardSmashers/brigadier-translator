@@ -15,19 +15,19 @@ export default class Translator {
         switch (gm) {
             case "0":
             case "s":
-                return "survival";
+                result = "survival";
                 break;
             case "1":
             case "c":
-                return "creative";
+                result = "creative";
                 break;
             case "2":
             case "a":
-                return "adventure";
+                result = "adventure";
                 break;
             case "3":
             case "sp":
-                return "survival";
+                result = "spectator";
                 break;
             default: break;
         }
