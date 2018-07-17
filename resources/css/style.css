@@ -7,7 +7,7 @@ textarea.materialize-textarea {
 }
 
 .main-body {
-    height: 355px !important;
+    height: 405px !important;
     overflow: hidden;
 }
 
@@ -60,4 +60,22 @@ textarea.materialize-textarea {
     resize: none;
     overflow-y: scroll;
     max-height: 13rem;
+}
+
+.tabs .indicator {
+    background-color: #8c9eff !important;
+}
+
+.tabs .tab a.active {
+    color: #3f51b5 !important;
+    background-color: #c5cae9 !important;
+}
+
+.tabs .tab a {
+    color: #3f51b5 !important;
+    background-color: #e8eaf6 !important;
+}
+
+.stretch-width {
+    width: 100vw !important;
 }

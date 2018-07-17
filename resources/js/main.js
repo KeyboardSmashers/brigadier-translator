@@ -7,7 +7,7 @@ let win;
 function createWindow() {
     win = new BrowserWindow({
         width: 700, 
-        height: 355, 
+        height: 405, 
         resizable: false, 
         title: `Brigadier Translator`, 
         frame: false,

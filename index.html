@@ -23,8 +23,23 @@
                 <li><a id="close-btn" class="btn-floating indigo btn-small waves-effect waves-light no-drag no-shadow"><i class="material-icons">close</i></a></li>
             </ul>
         </div>
+        
+        
     </nav>
-    <div class="container main">
+    
+    <div class="stretch-width">
+        <ul id="main-tabs" class="tabs">
+            <div class="indicator indigo" style="z-index: 1;"></div>
+
+            <li class="tab col s3"><a class="indigo-text" href="#convert-menu">Convert</a></li>
+            <li class="tab col s3"><a class="indigo-text" href="#logs-menu">Logs</a></li>
+            <li class="tab col s3"><a class="indigo-text" href="#settings-menu">Settings</a></li>
+            
+            
+        </ul>
+    </div>
+
+    <div id="convert-menu" class="container main">
         <div class="row">
             <div class="col s6">
                 <div class="input-field col s12">
@@ -47,7 +62,7 @@
                     <a id="file-btn" class="btn waves-effect waves-light indigo control-btn tooltipped" data-position="top" data-tooltip="Pick a .mcfunction file to convert">
                         <i class="material-icons left">folder</i>
                         <span>Open .mcfunction</span>
-                        <input type="file">
+                        <input type="file" accept=".mcfunction,.txt">
                     </a>
                 </div>
             </div>
@@ -62,6 +77,16 @@
             </div>
         </div>
     </div>
+
+    <div id="logs-menu" class="container main">
+        Logs, warnings and err0rs go here
+    </div>
+
+    <div id="settings-menu" class="container main">
+        Settings go here
+    </div>
+
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
