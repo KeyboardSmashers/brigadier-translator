@@ -1,6 +1,6 @@
 let commandSyntaxDictionary = {};
 
-export default class Translator {
+class Translator {
     static translate(command) {
 
     }
@@ -39,3 +39,5 @@ export default class Translator {
 
     }
 }
+
+exports.Translator = Translator;

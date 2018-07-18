@@ -79,11 +79,118 @@
     </div>
 
     <div id="logs-menu" class="container main">
-        Logs, warnings and err0rs go here
+        <div class="row">
+            <div class="col s11 logs hoverable">
+                <div id="logs" class="logs-text">
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                    Welcome to Brigadier Translator!<br>
+                </div>
+            </div>
+            <div class="col s1">
+                <ul>
+                    <li class="btn-padded">
+                        <a id="logs-up-btn" class="btn-floating waves-effect waves-light indigo lighten-1">
+                            <i class="material-icons">arrow_upward</i>
+                        </a>
+                    </li>
+                    <li class="btn-padded">
+                        <a id="logs-up-btn" class="btn-floating waves-effect waves-light indigo lighten-1">
+                            <i class="material-icons">arrow_downward</i>
+                        </a>
+                    </li>
+                    <li class="btn-padded"> 
+                        <a id="logs-up-btn" class="btn-floating waves-effect waves-light indigo lighten-1">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
     </div>
 
     <div id="settings-menu" class="container main">
-        Settings go here
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="option-text">
+                            <span class="tooltipped" data-position="top" data-tooltip="Before converting a .mcfunction, BT will make a copy of the old file">
+                                Keep old .mcfunction
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="switch right">
+                            <label>
+                                Off
+                                <input id="keep-old-mcfunction-in" type="checkbox" checked>
+                                <span id="keep-old-mcfunction-lever" class="lever"></span>
+                                On
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="option-text">
+                            <span class="tooltipped" data-position="top" data-tooltip="If off, BT will only convert the command upon pressing Enter">
+                                Convert command on the fly
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="switch right">
+                            <label>
+                                Off
+                                <input id="convert-command-in" type="checkbox" checked>
+                                <span id="convert-command-lever" class="lever"></span>
+                                On
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="option-text">
+                            <span class="tooltipped" data-position="top" data-tooltip="For those who like eating information for breakfast">
+                                Verbose logs
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="switch right">
+                            <label>
+                                Off
+                                <input id="verbose-logs-in" type="checkbox">
+                                <span id="verbose-logs-lever" class="lever"></span>
+                                On
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
    

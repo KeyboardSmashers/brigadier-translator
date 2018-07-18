@@ -79,3 +79,25 @@ textarea.materialize-textarea {
 .stretch-width {
     width: 100vw !important;
 }
+
+.option-text {
+    padding-top: 5px;
+}
+
+.logs {
+    
+    overflow-y: scroll;
+    height: 40vw;
+    background-color: #f1f1f1;
+    border: 5px #f1f1f1;
+    border-radius: 10px;
+}
+
+.logs-text {
+    font-family: "Lucida Console", monospace;
+    padding: 4px;
+}
+
+.btn-padded {
+    padding: 5px;
+}
