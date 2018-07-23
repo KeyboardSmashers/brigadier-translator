@@ -51,7 +51,7 @@
             <div class="col s6">
                 <div class="input-field col s12">
                     <textarea disabled id="output-ta" class="materialize-textarea"></textarea>
-                    <label for="output-ta">1.13 Command</label>
+                    <label id="output-label" for="output-ta" class="visible">1.13 Command</label>
                 </div>
                 
             </div>
@@ -109,6 +109,7 @@
     </div>
 
     <div id="settings-menu" class="container main">
+        <h6 class="custom-center grey-text">Hover over an option to see what it does</h6>
         <table>
             <tbody>
                 <tr>
@@ -168,6 +169,25 @@
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <div class="option-text">
+                            <span class="tooltipped" data-position="top" data-tooltip="For example, 'advancement test' will be changed into a special 'execute if entity'">
+                                Convert obsolete commands into execute counterparts
+                            </span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="switch right">
+                            <label>
+                                Off
+                                <input id="execute-counterparts-in" type="checkbox" checked>
+                                <span id="execute-counterparts-lever" class="lever"></span>
+                                On
+                            </label>
+                        </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -176,10 +196,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="resources/js/init.js"></script>
-    <script>
-        document.querySelector(`#input-ta`).addEventListener(`keyup`, () => {
-            document.querySelector(`#output-ta`).innerHTML = Translator.translate(document.querySelector(`#input-ta`).value);
-        });
-    </script>
 </body>
 </html>

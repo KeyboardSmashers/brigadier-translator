@@ -101,3 +101,11 @@ textarea.materialize-textarea {
 .btn-padded {
     padding: 5px;
 }
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
