@@ -2,7 +2,7 @@ function Debug(){
 
 }
 
-Debug.prototype.Write = (text, level) =>{
+Debug.prototype.Write = (text, level) => {
     document.querySelector(`#logs`).innerHTML += `<span class="log ${level}">${text}</span><br>`
 }
 
@@ -31,7 +31,7 @@ Debug.prototype.Fatal = function Fatal (text) {
     this.Write(`FATAL ERROR<br>DETAILS:<br>&nbsp;TIME: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}<br>&nbsp;CALLER: ${Fatal.caller.name}<br>MESSAGE:<br>"${text}"`, `level-fatal`);
 }
 
-Debug.prototype.Clear() = () => {
+Debug.prototype.Clear = () => {
     document.querySelector(`#logs`).innerHTML = ``;
 }
 

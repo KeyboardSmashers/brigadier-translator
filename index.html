@@ -83,27 +83,6 @@
             <div class="col s11 logs hoverable">
                 <div id="logs" class="logs-text">
                     Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
-                    Welcome to Brigadier Translator!<br>
                 </div>
             </div>
             <div class="col s1">
@@ -196,5 +175,11 @@
    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        const Translator = require(`./resources/js/modules/core.js`);
+        document.querySelector(`#input-ta`).addEventListener(`keyup`, () => {
+            document.querySelector(`#output-ta`).innerHTML = Translator.translate(document.querySelector(`#input-ta`).value);
+        });
+    </script>
 </body>
 </html>
