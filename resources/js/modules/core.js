@@ -26,19 +26,16 @@ Translator.prototype.gamemode = (input) => {
         case `0`:
         case `s`:
             return `survival`;
-            break;
         case `1`:
         case `c`:
             return `creative`;
-            break;
         case `2`:
         case `a`:
             return `adventure`;
-            break;
         case `3`:
         case `sp`:
             return `spectator`;
-            break;
+        default: break;
         
         
     }
