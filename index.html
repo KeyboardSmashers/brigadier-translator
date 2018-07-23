@@ -175,8 +175,8 @@
    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="resources/js/init.js"></script>
     <script>
-        const Translator = require(`./resources/js/modules/core.js`);
         document.querySelector(`#input-ta`).addEventListener(`keyup`, () => {
             document.querySelector(`#output-ta`).innerHTML = Translator.translate(document.querySelector(`#input-ta`).value);
         });

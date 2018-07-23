@@ -2,6 +2,9 @@
 const { app, BrowserWindow } = require(`electron`);
 const path = require(`path`);
 
+const Translator = require(`./modules/core.js`);
+const Debug = require(`./modules/debug.js`);
+
 let win;
 
 function createWindow() {
@@ -50,12 +53,13 @@ function createWindow() {
         }
 
         document.getElementById("copy-btn").addEventListener("click", copyEvent);
-
+        
         M.AutoInit();
     `);
     
     win.once(`ready-to-show`, () => {
         win.show();
+        
     });
 }
 

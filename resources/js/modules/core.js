@@ -44,11 +44,18 @@ Translator.prototype.clear = (input) => {
     return input;
 }
 
-Translator.prototype.translate = function translate(command) {
-    command.replace(`/`, ``);
+Translator.prototype.translate = function translate(fullCommand) {
     // JS MAGIC
-    console.log(command)
-    return this[command.split(` `)[0].replace(`-`, `_`)](command);
+    fullCommand = fullCommand.replace(`/`, ``);
+    command = fullCommand.split(` `)[0].replace(`-`, `_`);
+    if (command == `translate`) return;
+
+    try {
+        return eval(this[command])(fullCommand);
+    } catch (error) {
+        return ``;
+    }
+    
 }
 
 module.exports = new Translator();
