@@ -85,7 +85,7 @@ Translator.prototype.translate = function translate(fullCommand) {
 
     try {
         // JS MAGIC
-        return eval(this[command])(fullCommand);
+        return this[command](fullCommand);
     } catch (error) {
         return ``;
     }
